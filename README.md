@@ -47,9 +47,6 @@ python project.py
 
 ## Screenshots
 ## Main UI
-![image](https://github.com/user-attachments/images/ui.png)
-
-
 ![alt text](images/ui.png)
  
 ## View when clicked Generate Bill
