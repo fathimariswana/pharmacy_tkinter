@@ -31,6 +31,12 @@ medtable = ttk.Treeview(medListFrame, columns = (1,2), show= "headings")
 stocktable = ttk.Treeview(stockFrame, columns=(1,2,3,4,5,6,7,8,9,10,11,12), show="headings")
 stocktable.grid(row=20, columnspan=20, pady=2, padx=2)
 
+refLabel = Label(stockFrame, text='Reference ID', font=('Times 14'), width=20)
+refLabel.grid(row=2, column=1)
+refnum = StringVar()
+refEntry = Entry(stockFrame, width=43, textvariable=refnum)
+refEntry.grid(row=2, column=2)
+
 # medicine profile db code
 medreferance = StringVar()
 medicinename = StringVar()
@@ -121,6 +127,7 @@ view_med(row_out)
 db_obj.commit()
 db_obj.close()
 
+
 cmpNam= StringVar()
 medotyp = StringVar()
 issDt = StringVar()
@@ -134,7 +141,7 @@ rak = StringVar()
 
 # stock list db actions
 def stock_insert():
-    # rn = refnum.get()
+    rn = refnum.get()
     cn = compname.get()
     mn = medName.get()
     mt = medtype.get()
@@ -181,7 +188,7 @@ def stock_clear():
 def getrowstock(event):
     row_id = stocktable.identify_row(event.y)
     item = stocktable.item(stocktable.focus())
-    # refnum.set(item['values'][0])
+    refnum.set(item['values'][0])
     cmpNam.set(item['values'][1])
     medName.set(item['values'][2])
     medotyp.set(item['values'][3])
