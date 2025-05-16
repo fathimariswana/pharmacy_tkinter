@@ -47,7 +47,8 @@ python project.py
 
 ## Screenshots
 ## Main UI
-![ui](https://github.com/user-attachments/assets/e41d107f-0736-481b-a745-2eaf1a64a4c3)
+![image](https://github.com/user-attachments/images/ui.png)
+
 
 ![alt text](images/ui.png)
  
