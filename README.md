@@ -47,11 +47,14 @@ python project.py
 
 ## Screenshots
 ## Main UI
+
+![alt text](images/ui.png)
  
 ## View when clicked Generate Bill
- 
+ ![alt text](images/invoice.png)
 
 ## the UI when click on Revenue check 
+![alt text](images/sales.png)
 
 🧠 Technologies Used
 •	Python 3.11+
@@ -61,11 +64,3 @@ python project.py
 •	mysql-connector-python
 📝 License
 •	This project is free to use and modify for non-commercial purposes. 
-
-
-
-
-
-[def]: image.png
-
-[def]: image-1.png
